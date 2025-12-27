@@ -1,0 +1,10 @@
+# .readthedocs.yaml at repo root
+version: 2
+
+sphinx:
+  configuration: docs/conf.py  # path to conf.py
+
+python:
+  version: 3.11
+  install:
+    - requirements: docs/requirements.txt
