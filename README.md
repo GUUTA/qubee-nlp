@@ -41,7 +41,7 @@ pip install qubee-nlp
 ### From Source
 
 ```bash
-git clone https://github.com/afaanoromoo/qubee-nlp.git
+git clone https://github.com/GUUTA/qubee-nlp.git
 cd qubee-nlp
 pip install -e .
 ```
@@ -49,7 +49,7 @@ pip install -e .
 ### For Development
 
 ```bash
-git clone https://github.com/afaanoromoo/qubee-nlp.git
+git clone https://github.com/GUUTA/qubee-nlp.git
 cd qubee-nlp
 pip install -e .[dev]  # Includes testing and development tools
 ```
@@ -169,7 +169,7 @@ This library is specifically designed for **Afaan Oromoo** (Oromo language), whi
 
 ```bash
 # Clone repository
-git clone https://github.com/afaanoromoo/qubee-nlp.git
+git clone https://github.com/GUUTA/qubee-nlp.git
 cd qubee-nlp
 
 # Create virtual environment
@@ -237,8 +237,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ### Ways to Contribute
 
-1. **Report bugs**: File issues on [GitHub Issues](https://github.com/afaanoromoo/qubee-nlp/issues)
-2. **Suggest features**: Share ideas in [Discussions](https://github.com/afaanoromoo/qubee-nlp/discussions)
+1. **Report bugs**: File issues on [GitHub Issues](https://github.com/GUUTA/qubee-nlp/issues)
+2. **Suggest features**: Share ideas in [Discussions](https://github.com/GUUTA/qubee-nlp/discussions)
 3. **Submit pull requests**: Fix bugs or add features
 4. **Improve documentation**: Help make docs better
 5. **Share examples**: Create tutorials or examples
@@ -256,13 +256,13 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ### Community Support
 
-- [GitHub Discussions](https://github.com/afaanoromoo/qubee-nlp/discussions): For questions and discussions
-- [GitHub Issues](https://github.com/afaanoromoo/qubee-nlp/issues): For bug reports and feature requests
+- [GitHub Discussions](https://github.com/GUUTA/qubee-nlp/discussions): For questions and discussions
+- [GitHub Issues](https://github.com/GUUTA/qubee-nlp/issues): For bug reports and feature requests
 - [Documentation](https://qubee-nlp.readthedocs.io): For detailed guides and API reference
 
 ### Professional Support
 
-For commercial support, consulting, or custom development, please contact [contact@qubeenlp.org](mailto:contact@qubeenlp.org).
+For commercial support, consulting, or custom development, please contact [guutatesema@gmail.com](mailto:contact@qubeenlp.org).
 
 ## Citation
 
@@ -273,7 +273,7 @@ If you use Qubee NLP in your research, please cite:
   title = {Qubee NLP: Natural Language Processing for Afaan Oromoo},
   author = {Guta Tesema Tufa, Qubee NLP Team},
   year = {2025},
-  url = {https://github.com/afaanoromoo/qubee-nlp},
+  url = {https://github.com/GUUTA/qubee-nlp},
   version = {0.1.0}
 }
 ```
