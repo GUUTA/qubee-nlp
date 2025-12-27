@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qubee-nlp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Natural Language Processing tools for Afaan Oromoo (Oromo language) using Qubee script"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -54,12 +54,12 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/afaanoromoo/qubee-nlp"
+Homepage = "https://github.com/GUUTA/qubee-nlp"
 Documentation = "https://qubee-nlp.readthedocs.io"
-Repository = "https://github.com/afaanoromoo/qubee-nlp"
-Changelog = "https://github.com/afaanoromoo/qubee-nlp/blob/main/CHANGELOG.md"
-Issues = "https://github.com/afaanoromoo/qubee-nlp/issues"
-Discussions = "https://github.com/afaanoromoo/qubee-nlp/discussions"
+Repository = "https://github.com/GUUTA/qubee-nlp"
+Changelog = "https://github.com/GUUTA/qubee-nlp/blob/main/CHANGELOG.md"
+Issues = "https://github.com/GUUTA/qubee-nlp/issues"
+Discussions = "https://github.com/GUUTA/qubee-nlp/discussions"
 Funding = "https://opencollective.com/qubee-nlp"
 
 [project.optional-dependencies]
