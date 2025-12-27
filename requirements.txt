@@ -1,0 +1,12 @@
+# Core dependencies for Qubee NLP
+# This file is for production dependencies only
+
+# Python compatibility
+typing-extensions>=4.0.0; python_version<'3.8'
+
+# Note: Qubee NLP has minimal dependencies to keep it lightweight
+# Additional functionality can be installed via extras:
+# pip install qubee-nlp[dev]    # Development tools
+# pip install qubee-nlp[docs]   # Documentation
+# pip install qubee-nlp[test]   # Testing
+# pip install qubee-nlp[full]   # Full feature set
