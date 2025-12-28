@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qubee-nlp"
-version = "0.1.1"
+version = "0.1.2"
 description = "Natural Language Processing tools for Afaan Oromoo (Oromo language) using Qubee script"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -111,14 +111,10 @@ alphabet = "qubee_nlp.alphabet:QubeeAlphabet"
 tokenizer = "qubee_nlp.tokenizer:QubeeTokenizer"
 stemmer = "qubee_nlp.stemmer:QubeeStemmer"
 
+# 🔴 UPDATED FOR src/ LAYOUT (CRITICAL FIX)
 [tool.setuptools]
-packages = [
-    "qubee_nlp",
-    "qubee_nlp.pos",
-    "qubee_nlp.utils",
-    "qubee_nlp.corpus",
-    "qubee_nlp.data"
-]
+package-dir = { "" = "src" }
+packages = { find = { where = ["src"] } }
 include-package-data = true
 zip-safe = false
 
@@ -132,7 +128,7 @@ qubee_nlp = [
 [tool.black]
 line-length = 88
 target-version = ["py37", "py38", "py39", "py310", "py311"]
-include = '\\.pyi?$'  # <-- ESCAPED BACKSLASH
+include = '\\.pyi?$'
 
 [tool.isort]
 profile = "black"
@@ -178,8 +174,8 @@ exclude_lines = [
     "raise NotImplementedError",
     "if 0:",
     "if __name__ == .__main__.:",
-    "class .*\\\\bProtocol\\):",   # double backslash
-    "@(abc\\\\.)?abstractmethod"   # double backslash
+    "class .*\\\\bProtocol\\):",
+    "@(abc\\\\.)?abstractmethod"
 ]
 
 [metadata]
