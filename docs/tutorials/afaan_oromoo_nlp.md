@@ -127,7 +127,7 @@ print(QubeeAlphabet.DIACRITICS)  # {'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 
 print(QubeeAlphabet.VALID_CHARS)  # All allowed characters
 
 # Digraphs (common consonant combinations)
-print(QubeeAlphabet.DIGRAPHS)  # {'CH', 'DH', 'KH', 'NY', 'PH', 'SH', 'TS'}
+print(QubeeAlphabet.DIGRAPHS)  # {'CH', 'DH', 'NY', 'PH', 'SH'}
 
 # Diphthongs (common vowel combinations)
 print(QubeeAlphabet.DIPHTHONGS)  # {'AE', 'AI', 'AO', 'AU', 'EI', 'EO', 'EU', 'OI', 'OU'}
@@ -293,7 +293,7 @@ Split an Afaan Oromoo word into syllables based on Oromo phonotactics.
 - `List[str]`: List of syllables
 
 **Syllable patterns in Afaan Oromoo:**
-- CV (consonant-vowel): "ba", "de", "ki"
+- CV (consonant-vowel): "baa", "dee", "kii"
 - CVC (consonant-vowel-consonant): "bar", "qab", "gud"
 - V (vowel): "a", "o", "u"
 - VC (vowel-consonant): "ab", "id", "ug"
@@ -607,10 +607,9 @@ print("Consonants (21):", [l for l in all_letters if QubeeAlphabet.is_consonant(
 |---------|---------------|---------|
 | `CH` | Like "ch" in "church" | `chibbuu` (milk) |
 | `DH` | Voiced "th" as in "this" | `dhaga'uu` (to hear) |
-| `KH` | Like "ch" in Scottish "loch" | `khayrii` (charity) |
 | `NY` | Like "ny" in "canyon" | `nyaata` (food) |
 | `SH` | Like "sh" in "ship" | `shamarree` (leopard) |
-| `TS` | Like "ts" in "cats" | `tsaboo` (finger) |
+
 
 ## Notes and Best Practices
 
@@ -633,53 +632,35 @@ print("Consonants (21):", [l for l in all_letters if QubeeAlphabet.is_consonant(
 
 ### Main Modules
 
-- **Alphabet Module** - Qubee alphabet and validation ([Full Documentation](api/alphabet.md))
-- **Tokenizer Module** - Word and sentence tokenization ([Full Documentation](api/tokenizer.md))
-- **Stemmer Module** - Morphological analysis and stemming ([Full Documentation](api/stemmer.md))
+- - **Alphabet Module** - Qubee alphabet and validation ([Full Documentation](./api/alphabet.md))
+- **Tokenizer Module** - Word and sentence tokenization ([Full Documentation](./api/tokenizer.md))
+- **Stemmer Module** - Morphological analysis and stemming ([Full Documentation](./api/stemmer.md))
 - **Normalizer Module** - Advanced text normalization
 - **POS Module** - Part-of-speech tagging
 - **Stopwords Module** - Language-specific stopword lists
 
 ## Tutorials
 
-- [Getting Started](tutorials/getting_started.md) - First steps with Qubee NLP
-- [Afaan Oromoo NLP](tutorials/afaan_oromoo_nlp.md) - Language-specific processing
+- [Getting Started](./tutorials/getting_started.md) - First steps with Qubee NLP
+- [Afaan Oromoo NLP](./tutorials/afaan_oromoo_nlp.md) - Language-specific processing
 
 ## Examples
 
-Check the [examples directory](../examples/) for complete usage examples:
-- [Basic Usage](../examples/basic_usage.py)
-- [Tokenization](../examples/tokenization_example.py)
-- [Stemming](../examples/stemming_example.py)
-- [Advanced Features](../examples/advanced_features.py)
+Check the [examples directory](https://github.com/GUUTA/qubee-nlp/tree/main/examples) for complete usage examples:
+
+- [Basic Usage](https://github.com/GUUTA/qubee-nlp/blob/main/examples/basic_usage.py)
+- [Tokenization](https://github.com/GUUTA/qubee-nlp/blob/main/examples/tokenization_example.py)
+- [Stemming](https://github.com/GUUTA/qubee-nlp/blob/main/examples/stemming_example.py)
+- [Advanced Features](https://github.com/GUUTA/qubee-nlp/blob/main/examples/advanced_features.py)
 
 ## Contributing
 
-We welcome contributions! Please see our [GitHub repository](https://github.com/yourusername/qubee-nlp) for contribution guidelines.
+We welcome contributions! Please see our [GitHub repository](https://github.com/GUUTA/qubee-nlp) for contribution guidelines.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/GUUTA/qubee-nlp/blob/main/LICENSE) file for details.
 
-## Citation
-
-If you use Qubee NLP in your research, please cite:
-
-```bibtex
-@software{qubee_nlp,
-  title = {Qubee NLP: Natural Language Processing for Afaan Oromoo},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/qubee-nlp}
-}
-```
-
-## Support
-
-For questions and support:
-- GitHub Issues: [Report bugs or request features](https://github.com/yourusername/qubee-nlp/issues)
-- Email: your.email@example.com
-```
 
 This `index.md` file now serves as the main documentation page for Qubee NLP, providing:
 - Overview and quick start guide
@@ -689,3 +670,14 @@ This `index.md` file now serves as the main documentation page for Qubee NLP, pr
 - Information about the project and how to contribute
 
 The file maintains all the original content from the alphabet documentation while structuring it as a proper index page with navigation to other parts of the documentation.
+## Citation
+
+If you use Qubee NLP in your research, please cite:
+
+```bibtex
+@software{qubee_nlp,
+  title = {Qubee NLP: Natural Language Processing for Afaan Oromoo},
+  author = {Guta Tesema Tufa, Team of Qubee-NLP},
+  year = {2025},
+  url = {https://github.com/GUUTA/qubee-nlp}
+}

@@ -71,7 +71,7 @@ print("Diacritic mapping (first 3):", dict(list(QubeeAlphabet.DIACRITICS.items()
 |----------|---------|-------------|
 | Vowels | A, E, I, O, U | Basic vowels (with optional diacritics: á, é, í, ó, ú) |
 | Consonants | B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z | 21 consonants |
-| Digraphs | CH, DH, KH, NY, PH, SH, TS | Common consonant combinations |
+| Digraphs | CH, DH, NY, PH, SH | Common consonant combinations |
 | Special | ' (apostrophe), - (hyphen) | Used in words like "waa'ee" (about) |
 
 ## Your First Qubee NLP Program
@@ -785,15 +785,17 @@ Now that you've completed this getting started guide:
    - [Afaan Oromoo NLP](afaan_oromoo_nlp.md) - Advanced language-specific processing
 
 2. **Read the API Documentation**:
-   - [Alphabet Module](../api/alphabet.md)
-   - [Tokenizer Module](../api/tokenizer.md)
-   - [Stemmer Module](../api/stemmer.md)
+   - [Alphabet Module](alphabet.md)
+   - [Tokenizer Module](tokenizer.md)
+   - [Stemmer Module](stemmer.md)
+
 
 3. **Try the Example Scripts**:
-   - [Basic Usage](../../examples/basic_usage.py)
-   - [Tokenization Example](../../examples/tokenization_example.py)
-   - [Stemming Example](../../examples/stemming_example.py)
-   - [Advanced Features](../../examples/advanced_features.py)
+   - [Basic Usage](https://github.com/GUUTA/qubee-nlp/blob/main/examples/basic_usage.py)
+   - [Tokenization Example](https://github.com/GUUTA/qubee-nlp/blob/main/examples/tokenization_example.py)
+   - [Stemming Example](https://github.com/GUUTA/qubee-nlp/blob/main/examples/stemming_example.py)
+   - [Advanced Features](https://github.com/GUUTA/qubee-nlp/blob/main/examples/advanced_features.py)
+
 
 4. **Work with Real Data**: Try processing real Afaan Oromoo texts from:
    - Oromo news websites
@@ -807,11 +809,11 @@ Now that you've completed this getting started guide:
    - Contribute code improvements
 
 ## Getting Help
+   -  **GitHub Issues**: [Report bugs or request features](https://github.com/GUUTA/qubee-nlp/issues)
+   - **Documentation**: Check the [API documentation](./api/) for detailed information
+   - **Examples**: Look at the [examples directory](https://github.com/GUUTA/qubee-nlp/tree/main/examples) for working code
+   - **Email**: [guutatesema@gmail.com](mailto:guutatesema@gmail.com)
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/yourusername/qubee-nlp/issues)
-- **Documentation**: Check the [API documentation](../api/) for detailed information
-- **Examples**: Look at the [examples directory](../../examples/) for working code
-- **Email**: your.email@example.com
 
 Happy coding with Afaan Oromoo NLP! 🌍📚
 ```

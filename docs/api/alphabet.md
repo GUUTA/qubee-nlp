@@ -27,7 +27,7 @@ print(QubeeAlphabet.DIACRITICS)  # {'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 
 print(QubeeAlphabet.VALID_CHARS)  # All allowed characters
 
 # Digraphs (common consonant combinations)
-print(QubeeAlphabet.DIGRAPHS)  # {'CH', 'DH', 'KH', 'NY', 'PH', 'SH', 'TS'}
+print(QubeeAlphabet.DIGRAPHS)  # {'CH', 'DH', 'NY', 'PH', 'SH'}
 
 # Diphthongs (common vowel combinations)
 print(QubeeAlphabet.DIPHTHONGS)  # {'AE', 'AI', 'AO', 'AU', 'EI', 'EO', 'EU', 'OI', 'OU'}
