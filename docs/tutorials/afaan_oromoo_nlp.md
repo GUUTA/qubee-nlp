@@ -2,7 +2,7 @@ I'll reformat this content into a proper `index.md` file while keeping all the i
 
 ## **docs/index.md**
 
-```markdown
+
 # Qubee NLP Documentation
 
 Welcome to Qubee NLP, a comprehensive Natural Language Processing library for Afaan Oromoo (Oromo language) using the Qubee script.
@@ -11,17 +11,18 @@ Welcome to Qubee NLP, a comprehensive Natural Language Processing library for Af
 
 Qubee NLP provides tools for processing, analyzing, and understanding Afaan Oromoo text. The library includes:
 
-- **Text Validation**: Validate Qubee script text
-- **Tokenization**: Word and sentence tokenization
-- **Normalization**: Text cleaning and standardization
-- **Stemming**: Morphological analysis and stemming
-- **POS Tagging**: Part-of-speech tagging
-- **Stopword Removal**: Language-specific stopword lists
-- **Syllabification**: Syllable segmentation
+* **Text Validation**: Validate Qubee script text
+* **Tokenization**: Word and sentence tokenization
+* **Normalization**: Text cleaning and standardization
+* **Stemming**: Morphological analysis and stemming
+* **POS Tagging**: Part-of-speech tagging
+* **Stopword Removal**: Language-specific stopword lists
+* **Syllabification**: Syllable segmentation
 
 ## Quick Start
 
 ### Installation
+
 
 ```bash
 pip install qubee-nlp

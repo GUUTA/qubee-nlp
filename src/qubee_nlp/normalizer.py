@@ -148,3 +148,12 @@ def normalize_for_search(text: str) -> str:
         remove_punctuation=True,
         remove_extra_spaces=True,
     ).normalize(text)
+# ✅ Compatibility alias
+Normalizer = TextNormalizer
+
+__all__ = [
+    "TextNormalizer",
+    "Normalizer",
+    "normalize_text",
+    "remove_diacriti",
+]

@@ -219,7 +219,28 @@ class TestAlphabetConstants:
         assert 'á' in diacritics
         assert diacritics['Á'] == 'A'
         assert diacritics['é'] == 'e'
+# ------------------ New Foreign Qubee Tests ------------------ #
 
+class TestForeignQubee:
+
+    def test_qubee_alagaa_set(self):
+        assert QubeeAlphabet.QUBEE_ALAGAA == {'TS', 'ZH'}
+        assert 'TS' in QubeeAlphabet.QUBEE_ALAGAA
+        assert 'ZH' in QubeeAlphabet.QUBEE_ALAGAA
+        assert 'CH' not in QubeeAlphabet.QUBEE_ALAGAA
+        assert 'V' not in QubeeAlphabet.QUBEE_ALAGAA
+
+    def test_is_foreign_qubee_method(self):
+        assert QubeeAlphabet.is_foreign_qubee('TS') is True
+        assert QubeeAlphabet.is_foreign_qubee('ZH') is True
+        assert QubeeAlphabet.is_foreign_qubee('ts') is True
+        assert QubeeAlphabet.is_foreign_qubee('zh') is True
+        assert QubeeAlphabet.is_foreign_qubee('CH') is False
+        assert QubeeAlphabet.is_foreign_qubee('DH') is False
+        assert QubeeAlphabet.is_foreign_qubee('V') is False
+        assert QubeeAlphabet.is_foreign_qubee('A') is False
+        assert QubeeAlphabet.is_foreign_qubee('') is False
+        assert QubeeAlphabet.is_foreign_qubee(None) is False
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])

@@ -42,6 +42,13 @@ class QubeeAlphabet:
         'MP', 'LB', 'LD', 'LG', 'LM', 'LN', 'LP', 'LT'
     }
 
+    # ----------------- Qubee Alagaa (ADDED ONLY) ----------------- #
+
+    FOREIGN_DIGRAPHS: Set[str] = {'TS', 'ZH'}
+   
+
+    QUBEE_ALAGAA: Set[str] = FOREIGN_DIGRAPHS
+
     # ----------------- Character Checks ----------------- #
 
     @classmethod
@@ -63,6 +70,18 @@ class QubeeAlphabet:
     @classmethod
     def is_digraph(cls, text: str) -> bool:
         return text.upper() in cls.DIGRAPHS if text and len(text) == 2 else False
+
+    # --------- NEW METHOD (ADDED, NOT REPLACED) --------- #
+
+    @classmethod
+    def is_foreign_qubee(cls, text: str) -> bool:
+        """
+        Check whether a digraph is Qubee Alagaa (TS, ZH).
+        """
+        if not text:
+            return False
+        return len(text) == 2 and text.upper() in cls.QUBEE_ALAGAA
+
 
     @classmethod
     def normalize_diacritics(cls, text: str) -> str:
@@ -153,6 +172,7 @@ def count_vowels(word: str) -> int:
 
 
 # ----------------- Syllable splitting ----------------- #
+
 def split_into_syllables(word: str) -> List[str]:
     """Split a word into syllables using CV rules, uppercase all letters."""
     if not word or word.strip() == '':
@@ -166,7 +186,6 @@ def split_into_syllables(word: str) -> List[str]:
     while i < n:
         syllable = ''
 
-        # Handle initial consonant(s) including digraphs
         if QubeeAlphabet.is_consonant(word[i]):
             if i + 1 < n and word[i:i+2] in QubeeAlphabet.DIGRAPHS:
                 syllable += word[i:i+2]
@@ -175,7 +194,6 @@ def split_into_syllables(word: str) -> List[str]:
                 syllable += word[i]
                 i += 1
 
-        # Handle vowel(s) including diphthongs
         if i < n and QubeeAlphabet.is_vowel(word[i]):
             if i + 1 < n and word[i:i+2] in QubeeAlphabet.DIPHTHONGS:
                 syllable += word[i:i+2]
@@ -184,7 +202,6 @@ def split_into_syllables(word: str) -> List[str]:
                 syllable += word[i]
                 i += 1
 
-        # Attach remaining consonants at end to next syllable
         if syllable and all(QubeeAlphabet.is_consonant(c) for c in syllable) and syllables:
             syllables[-1] += syllable
         elif syllable:
