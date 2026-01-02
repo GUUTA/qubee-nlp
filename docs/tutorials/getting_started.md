@@ -788,6 +788,7 @@ Now that you've completed this getting started guide:
    - [Alphabet Module](alphabet.md)
    - [Tokenizer Module](tokenizer.md)
    - [Stemmer Module](stemmer.md)
+    - [Corpus Module](corpus.md)
 
 
 3. **Try the Example Scripts**:
@@ -795,7 +796,7 @@ Now that you've completed this getting started guide:
    - [Tokenization Example](https://github.com/GUUTA/qubee-nlp/blob/main/examples/tokenization_example.py)
    - [Stemming Example](https://github.com/GUUTA/qubee-nlp/blob/main/examples/stemming_example.py)
    - [Advanced Features](https://github.com/GUUTA/qubee-nlp/blob/main/examples/advanced_features.py)
-
+   
 
 4. **Work with Real Data**: Try processing real Afaan Oromoo texts from:
    - Oromo news websites
