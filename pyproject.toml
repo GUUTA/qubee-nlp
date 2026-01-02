@@ -4,17 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qubee-nlp"
-version = "0.1.2"
+version = "0.1.2.2"
 description = "Natural Language Processing tools for Afaan Oromoo (Oromo language) using Qubee script"
 readme = "README.md"
 requires-python = ">=3.7"
 
 authors = [
-    { name = "Qubee NLP Team", email = "contact@qubeenlp.org" }
+    { name = "Qubee NLP Team", email = "guutatesema@gmail.com" }
 ]
 
 maintainers = [
-    { name = "Afaan Oromoo NLP Community", email = "community@qubeenlp.org" }
+    { name = "Afaan Oromoo NLP Community", email = "guutatesema@gmail.com" }
 ]
 
 license = { file = "LICENSE" }

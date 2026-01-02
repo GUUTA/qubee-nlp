@@ -16,7 +16,8 @@ Complete documentation is available online:
 ### 🚀 Getting Started
 - [Getting Started Guide](tutorials/getting_started.md)
 - [Afaan Oromoo NLP Tutorial](tutorials/afaan_oromoo_nlp.md)
-- [Corpus Guide ](tutorials/Corpus.md)
+- [Corpus Guide](docs/Corpus.md)
+
 
 ### 🧠 API Reference
 - [Alphabet Module](api/alphabet.md)
